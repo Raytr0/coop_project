@@ -1,0 +1,160 @@
+.user-profile
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.profile-images-container
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	margin: 10px;
+}
+
+.profile-image
+{
+	border-radius: 50%;
+	padding: 10px;
+	margin: auto;
+	width: 150px;
+	height: 150px;
+}
+
+.profile-bio-container
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 50px;
+	padding: 10px;
+	width: 100%;
+}
+
+.profile-bio-container h6 
+{
+	display: inline;
+}
+
+.profile-info-wrapper
+{
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.profile-info-container
+{	
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.profile-info-container > div
+{	
+	padding: 10px;
+}
+
+@media only screen and (min-width: 421px) and (max-width: 980px) 
+{
+	.profile-bio-container h6 
+	{
+		display: block;
+	}
+
+	.user-profile
+	{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.sm-buttons 
+	{
+		justify-content: center;
+	}
+
+	.sm-buttons > button 
+	{
+		margin: 0px 20px;
+	}
+
+	.profile-bio-container
+	{
+		margin-left: 0px;
+	}
+
+	.profile-bio-container h1
+	{
+		margin: auto;
+		margin-bottom: 25px;
+	}
+
+	.profile-info-wrapper
+	{
+		display: flex;
+		justify-content: space-around;
+		width: auto;
+	}
+
+	.profile-info-container
+	{
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 700px)
+{
+	.profile-bio-container h6 
+	{
+		display: block;
+	}
+	
+	.profile-info-container
+	{
+		height: auto;
+	}
+
+	.sm-buttons 
+	{
+		justify-content: space-around;
+	}
+
+
+	.sm-buttons > button
+	{
+		margin: 0px;
+	}
+
+}
+
+@media only screen and (max-width: 420px) 
+{
+	.user-profile
+	{
+		flex-direction: column;
+		justify-content: center;
+		height: auto;
+	}
+
+	.profile-bio-container
+	{
+		margin-left: 0px;
+		align-items: center; 
+		overflow: scroll;
+		text-align: center;
+	}
+
+	.profile-bio-container h1
+	{
+		margin: auto;
+		margin-bottom: 25px;
+	}
+
+	.profile-info-wrapper
+	{
+		flex-direction: column;
+		align-items: stretch; 
+		width: auto;
+	}
+}

@@ -1,0 +1,30 @@
+.banner-picture
+{
+    border-radius: 0.5rem !important;
+}
+
+.profile-header
+{
+    position: relative;
+}
+
+.profile-img-container
+{
+    position: absolute;
+    bottom: -1rem !important;
+    left: 5rem !important;
+    z-index: 1;
+}
+
+.profile-picture
+{
+    border: 0px !important;
+}
+
+.edit-buttons-container
+{
+    position: absolute;
+    bottom: -1rem !important;
+    right: 5rem !important;
+    z-index: 1;
+}

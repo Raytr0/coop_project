@@ -1,0 +1,164 @@
+.calendar-container
+{
+    overflow: auto;
+}
+
+.calendar-header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-header h1
+{
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    margin: 20px;
+}
+
+.left, .right
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    background-color: var(--theme-color);
+    border-radius: 100%;
+    margin: auto 0;
+}
+
+.calendar-header svg
+{
+    width: 18px;
+    height: 18px;
+}
+
+.calendar-header svg:hover
+{
+    cursor: pointer;
+}
+
+.calendar-body
+{
+    width: 95%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: minmax(min-content, max-content) repeat(6, 140px);
+    border-width: 0px 0px 1px 1px;
+    border-style: solid;
+    border-color: #ddd;
+}
+
+.calendar-body > div
+{
+    border-width: 1px 1px 0px 0px;
+    border-style: solid;
+    border-color: #ddd;
+}
+
+.calendar-heading
+{
+    padding: .2em;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #626262;
+}
+
+.outside-month
+{
+    background-color: #f1f1f166;
+}
+
+.day
+{
+    overflow: hidden;
+}
+
+.day > span
+{
+    display: block;
+    height: 30px;
+    width: 30px;
+    padding: 0.43rem;
+    margin: 0.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.current-day
+{
+    background-color: var(--theme-color);
+    border-radius: 50%;
+    color: white;
+}
+
+.event
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    margin: 0.4rem;
+    padding: 0 0.5rem;
+    color: white;
+    background-color: var(--theme-color);
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.event:hover
+{
+    cursor: pointer;
+    transition-timing-function: ease;
+    transform: scale(1.075);
+}
+
+.more
+{
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+
+.more:hover
+{
+    background-color: rgba(88, 88, 88, 0.25);
+}
+
+.pop-up
+{
+    position: relative;
+    width: 225px;
+    padding: 10px;
+    z-index: 10;
+    border-radius: 0.5rem;
+    box-shadow: 0 0px 20px 1px #44444426;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    animation: fadein 0.5s ease;
+}
+
+.pop-up > div
+{
+    width: 75%;
+    margin: 0.6rem auto;
+
+}
+
+.close
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,10 @@
+tbody tr:hover
+{
+	background-color: #dadada;
+	cursor: pointer;
+}
+
+.sortfilter > div
+{
+	display: inline-block;
+}

@@ -1,0 +1,154 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+:root 
+{
+    --theme-color: #7367F0;
+    --theme-color-active: #a299da;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+html, body
+{
+    font-family: Montserrat, Helvetica,Arial,sans-serif;
+}
+
+.content-body
+{
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 20px 1px #44444426;
+    margin-bottom: 30px;
+}
+
+.center
+{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.link
+{
+    color: var(--theme-color) !important;
+    font-size: 1vw;
+}
+
+.link:hover
+{
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+.link:active
+{
+    color: var(--theme-color-active) !important;
+    cursor: pointer;
+}
+
+.h3
+{
+    font-weight: 500;
+    font-size: 1.50rem;
+}
+
+.error
+{
+    color: #ff8888;
+}
+
+.success
+{
+    color: #8aff9a;
+}
+
+.text
+{
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.edit_profile
+{
+	display: none;
+}
+
+.card
+{
+    margin-bottom: 0px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+  
+    to {
+        opacity: 0;
+    }
+}
+
+.close-svg:hover
+{
+    filter: invert(0%) sepia(63%) saturate(10%) hue-rotate(128deg) brightness(87%) contrast(100%);
+}
+
+/* Styles for notification icon and children*/
+
+.notification-menu::before
+{
+   content: none !important;
+}
+
+.notification:hover
+{
+    cursor: pointer;
+}
+
+.no-border
+{
+    border: 0px solid rgba(0, 0, 0, 0) !important;
+}
+
+.close-notification
+{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #22292F;
+    text-shadow: 0 1px 0 #FFFFFF;
+    opacity: 0.5;
+    width: 100% !important;
+}
+
+.media
+{
+    align-items: center !important;
+}
